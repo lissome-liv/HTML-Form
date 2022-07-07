@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>payment form</title>
+</head>
+
+<body style="font-family: 'Courier New', Courier, monospace; background: rgb(245, 194, 85); ">
+    <form action="">
+        <h1> payment Form</h1>
+        <h2>Contact Information</h2>
+        <p>Name:*<input type="text" name="name" required></p>
+        <fieldset>
+            <legend>Gender*</legend>
+            <p>
+                Male <input type="radio" name="gender" id="male" required> Female <input type="radio" name="gender"
+                    id="female" required>
+            </p>
+        </fieldset>
+        <p>Address:<textarea name="address" id="address" cols="100" rows="8"></textarea></p>
+        <p>Email:*<input type="email" name="email" required></p>
+        <p>Pincode:<input type="number" name="pincode" id="pincode"></p>
+        <h2>Payment Information</h2>
+        <p>Card type:*
+            <select name="card_type" id="card_type" required>
+                <option values="">---select a card type---</option>
+                <option value="Visa">Visa</option>
+                <option value="Smartcard">Smartcard</option>
+                <option value="Mastercard">Mastercard</option>
+            </select>
+        </p>
+        <p>
+            Card Number*<input type="number" name="card_number" id="card_number" required>
+        </p>
+        <p>
+            Expiration Date*:<input type="date" name="exp_date" id="exp_date" required>
+        </p>
+        <p>CVV*<input type="password" name="CVV" id="CVV" required></p>
+        <input type="submit" value="Pay Now">
+    </form>
+</body>
+
+</html>
